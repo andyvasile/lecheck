@@ -6,15 +6,18 @@ Simple tool writen for personal use. It will check if a given domain will pass o
 
 _Usage:_
 
-```rootie@penguing-server$ sh ./lecheck.sh andyvasile.com
+```
+rootie@penguing-server$ sh ./lecheck.sh andyvasile.com
 http:// -> magnific! 
-http://www -> Oui !! ```
-
+http://www -> Oui !!
+```
 If something doesn't go right, it will tell the error and where the domain is redirecting:
 
-```rootie@penguing-server$ sh ./lecheck.sh andyvasile.com
+```
+rootie@penguing-server$ sh ./lecheck.sh andyvasile.com
 Sacrebleu!!
 http:// ->>> Location: https://andyvasile.com/
 
 Sacrebleu!!
-http://www ->>> Location: https://andyvasile.com/```
+http://www ->>> Location: https://andyvasile.com/
+```
