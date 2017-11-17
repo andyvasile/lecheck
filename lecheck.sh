@@ -19,7 +19,7 @@ if [[ $# -eq 0 ]]; then
 fi
 
 if [[ $# -eq 2 ]] ; then
-    	echo "WHOA! once at a time!"
+    	echo "Sacrebleu! once at a time!"
     	exit 0
 fi
 
@@ -29,23 +29,20 @@ if [[ $# -eq 1 ]]; then
     
 
     if [[ $nw == *"200"* ]]; then
-    echo "${GREEN}Oui Oui !!${NC} http://${NC}"
+    echo "${GREEN}http:// ->${NC} magnific! ${NC}"
     else
     echo "${DARK_RED}Sacrebleu!!${NC}" 
-    echo "----------------------------------"
-    curl -I -s http://$1 | grep -i location
+    echo "http:// ->>> $(curl -I -s http://$1 | grep -i location)"
     echo
     fi
 
     if [[ $ww == *"200"* ]]; then
-    echo "${GREEN}Oui Oui !!${NC} http://www.${NC}"
+    echo "${GREEN}http://www ->${NC} Oui !! ${NC}"
 	else
     echo "${DARK_RED}Sacrebleu!!${NC}" 
-    echo "----------------------------------"
-    curl -I -s http://www.$1 | grep -i location
+    echo "http://www ->>> $(curl -I -s http://$1 | grep -i location)"
     echo
     fi
 
     exit 0
 fi
-
