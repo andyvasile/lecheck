@@ -40,7 +40,7 @@ if [[ $# -eq 1 ]]; then
     echo "${GREEN}http://www ->${NC} Oui !! ${NC}"
 	else
     echo "${DARK_RED}Sacrebleu!!${NC}" 
-    echo "http://www ->>> $(curl -I -s http://$1 | grep -i location)"
+    echo "http://www ->>> $(curl -I -s http://www.$1 | grep -i location)"
     echo
     fi
 
